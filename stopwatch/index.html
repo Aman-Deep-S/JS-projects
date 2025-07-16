@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+                margin: 0;
+                background-color: black;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            .times {
+                margin-top: 5%;
+                margin-left: 25%;
+                height: 15%;
+                width: 50%;
+                text-align: center;
+                align-items: center;
+                color: white;
+            }
+            .container {
+                margin-top: 0%;
+                margin-left: 25%;
+                height: 15%;
+                width: 50%;
+                text-align: center;
+                align-items: center;
+                color: white;
+            }
+            .laplist {
+                margin-top: 0%;
+                margin-left: 25%;
+                height: auto;
+                width: 50%;
+                text-align: center;
+                align-items: center;
+                color: white;
+            }
+            .timeLabel{
+                font-size: 80px;
+            }
+            button {
+                margin: 5px;
+                background-color:rgb(209, 179, 179);
+                color: rgb(45, 14, 14);
+                font-weight: 500;
+                font-size: 20px;
+                border: none;
+                cursor: pointer;
+                height: 80px;
+                width: 80px;
+                border-radius: 100%;
+                border: 8px double black;
+            }
+            button:hover{
+                background-color: red;
+            }
+            .laps{
+                font-size: 40px;
+            }
+            li{
+                padding: 5px;
+                list-style-type: none;
+                border-bottom: 2px dotted gray;
+            }
+        </style>
+</head>
+<body>
+    <div class = "times"><label id="time" class="timeLabel">00:00:00:000</label></div>
+        <div class="container">
+            <div style="float: left;"><button id="lap">Lap</button></div>
+            <div style="float: right;"><button id="start">Start</button></div>
+        </div>
+        <div class="laplist"><ul id="laps" class="laps"></ul></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

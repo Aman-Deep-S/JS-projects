@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: blanchedalmond;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            label{
+                font-size: 80px;
+            }
+            .top{
+                padding: 3%;
+                background-color: white;
+                margin-top: 2%;
+                margin-left: 35%;
+                height: 15%;
+                width: 15%;
+                text-align: center;
+                align-items: center;
+                color:darkturquoise;
+                border: 20px solid gray;
+            }
+            .session{
+                background-color: gray;
+                margin-top: 0%;
+                margin-left: 35%;
+                height: 5%;
+                padding-bottom: 5%;
+                width: 21%;
+                text-align: center;
+                align-items: center;
+                color:white;
+                border: 20px solid gray;
+                border-bottom: 2px dotted white;
+            }
+            .tyms{
+                background-color: gray;
+                margin-top: 0%;
+                margin-left: 35%;
+                height: 20%;
+                width: 21%;
+                text-align: center;
+                align-items: center;
+                color:white;
+                border: 20px solid gray;
+                border-bottom: 2px dotted white;
+            }
+            .tym{
+                background-color: gray;
+                margin-top: 0%;
+                margin-left: 35%;
+                height: 10%;
+                width: 21%;
+                text-align: center;
+                align-items: center;
+                color:white;
+                border: 20px solid gray;
+            }
+            .tyms button{
+                border-radius: 18%;
+                width: 30px;
+                background-color: black;
+                border: 1px double black;
+                font-size: 15px;
+                color: white;
+                cursor: pointer;
+            }
+            .tym button {
+                border-radius: 5%;
+                width: 100px;
+                background-color: black;
+                border: 1px double black;
+                font-size: 30px;
+                color: white;
+                cursor: pointer;
+            }
+            .left{
+                float: left;
+            }
+            .right{
+                float: right;
+            }
+            .disabled{
+                background-color: grey;
+            }
+            .enabled{
+                background-color: black;
+            }
+        </style>
+</head>
+<body>
+    <div class="top" id="top">
+            <label id="time" class="time">00:00</label>
+        </div>
+        <div class="session" id="session">
+            <h1 id = "timer-label">Session</h1>
+        </div>
+        <div class="tyms" id="tyms">
+            <div class="left" id="left">
+                <p>Session Time</p>
+                <p id="session-length" style="color: turquoise;">15 min</p>
+                <button id="session-decrement">-</button>
+                <button id="session-increment">+</button>
+            </div>
+            <div class="right" id="right">
+                <p>Break Time</p>
+                <p id="break-length" style="color: red;">5 min</p>
+                <button id="break-decrement">-</button>
+                <button id="break-increment">+</button>
+            </div>
+        </div>
+        <div class="tym" id="tym">
+            <div class="left"><button class="start-pause"  id="start-pause">Start</button></div>
+            <div class="right"><button class="reset" id="reset">Reset</button></div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
