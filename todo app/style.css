@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.todo-app {
+    display: flex;
+    margin: auto;
+}
+.tasklist {
+    flex: 1;
+    background-color: #ccc;
+    border-right: 1px solid #ccc;
+}
+.tasks {
+    flex: 1;
+    padding: 20px;
+}
+.task-actions {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.task-actions textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px hidden #ccc;
+    resize: none;
+}
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.icon {
+    cursor: pointer;
+    margin-left: 10px;
+}
+li{
+    list-style-type: none;
+    padding: auto;
+}
+li #left{
+    font-size: 18px;
+    float: left;
+    margin-left: 10%;
+} 
+li .right{
+    float: right;
+    margin-left: 60%;
+    margin-right: 2%;
+}
+#clear{
+    font-size: 17px;
+   margin-left:20px;
+   height:40px;
+   width: 60px;
+   border-radius: 10px;
+}
+#task {
+    text-align: center;
+}
+#style{
+    text-align: center;
+}
