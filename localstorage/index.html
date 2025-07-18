@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            background-color: #3D74B6;
+            justify-content: center;
+        }
+        #parent{
+            text-align: center;
+            background-color: #FBF5DE;
+        }
+        #btn{
+            width: 5rem;
+            height: 2rem;
+            background-color: #EAC8A6;
+            font-size: 1.5rem;
+        }
+        #btn:hover{
+            cursor: pointer;
+            color: #ad8c6a;
+        }
+        input {
+            width: 20rem;
+            height: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <input id="text" placeholder="enter something">
+        <button id="btn">save</button>
+    </div>
+            <div id="parent"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
